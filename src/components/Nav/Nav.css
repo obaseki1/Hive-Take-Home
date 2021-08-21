@@ -1,0 +1,44 @@
+.nav-container {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #d3dae0;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+}
+.nav {
+  width: 1020px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hive-img {
+  object-fit: contain;
+  width: 200px;
+  align-self: center;
+  margin-left: 32px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  color: grey;
+  margin-right: 32px;
+}
+.nav-cta {
+  background-color: rgb(74, 144, 226);
+  border: none;
+  border-radius: 50px;
+  padding: 14px 22px;
+  color: white;
+  font-size: 14px;
+  margin-left: 25px;
+  font-weight: bold;
+  box-shadow: rgb(0 0 0 / 21%) 0px 2px 5px 0px;
+}
+.nav-btn:hover {
+  background-color: #5f9de5;
+  color: grey;
+}

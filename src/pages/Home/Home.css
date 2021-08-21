@@ -1,0 +1,249 @@
+.micro-section-1 {
+  background-color: rgb(48, 128, 224);
+  min-height: 600px;
+  color: white;
+}
+.micro-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+.micro-hero-img {
+  object-fit: contain;
+  width: 90%;
+  max-width: 900px;
+}
+.micro-hero h2 {
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.hero-caption {
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: center;
+}
+.slight-bold {
+  font-weight: 400;
+}
+.micro {
+  color: #4a90e2;
+  border: none;
+  padding: 18px;
+  width: 300px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.btn-div {
+  display: flex;
+  margin-top: 30px;
+}
+.micro-section-2 {
+  color: rgb(123, 123, 123);
+}
+.step-container {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.step-heading {
+  text-align: center;
+  color: rgb(74, 74, 74);
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 50px;
+}
+.step-container h2 {
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.step-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  color: black;
+  padding-bottom: 50px;
+}
+.task-heading {
+  font-weight: bold;
+  color: black;
+}
+.task-div-inner {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.task-caption {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.task-list {
+  margin-top: 15px;
+}
+
+.task-list-item {
+  color: rgb(74, 74, 74);
+  margin-top: 10px;
+}
+.task-list-item span {
+  margin-left: 10px;
+}
+.micro-section-3 {
+  background-color: rgb(250, 250, 250);
+  min-height: 400px;
+}
+.jobs-heading {
+  text-align: center;
+}
+.jobs-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.micro-section-4 {
+  min-height: 400px;
+}
+.community-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.white-box {
+  width: 30%;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 1px 1px #d3dae0;
+}
+.box-title {
+  color: rgb(48, 128, 224);
+  font-size: 32px;
+}
+.box-caption {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.country-div {
+  display: flex;
+  align-items: center;
+}
+.testimonial-row {
+  display: flex;
+  /*overflow-x: scroll;*/
+  margin-top: 40px;
+}
+.testimonial-row::-webkit-scrollbar{
+  visibility: hidden;
+}
+.testimonial {
+  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  box-shadow: 0px 1px 1px 1px #d3dae0;
+  align-items: flex-start;
+  padding: 15px;
+  justify-content: flex-start;
+  height: 200px;
+  width: 30%;
+  min-width: 275px;
+  overflow-y: scroll;
+}
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: rgb(74, 74, 74);
+}
+.testimonial-country {
+  color: rgb(48, 128, 224);
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.testimonial-caption {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgb(123, 123, 123);
+  line-height: 1.5;
+}
+.community-container{
+  width: 30%;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 1px 1px #d3dae0;
+}
+.pagination-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .micro-hero {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .step-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .step-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .step-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .task-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .task-div-inner {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .task-list{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .community-row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .community-container{
+    width: 90%;
+    margin-top: 15px;
+  }
+
+}
