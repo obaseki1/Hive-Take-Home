@@ -10,7 +10,7 @@
   align-items: center;
   margin-top: 10px;
   width: 100%;
-  box-shadow: 0 1px 4px 1px grey;
+  box-shadow: rgb(0 0 0 / 21%) 1px 2px 5px 0px;
   border-radius: 5px;
 }
 .dropdown {
@@ -24,7 +24,7 @@
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
-  border-bottom: 0.5px solid grey;
+  box-shadow: rgb(0 0 0 / 21%) 1px 2px 5px 0px;
 }
 .buttons-div {
   width: 100%;
@@ -32,7 +32,7 @@
   justify-content: space-between;
 }
 .buttons-div span {
-  box-shadow: 0 1px 4px 1px grey;
+  box-shadow: rgb(0 0 0 / 21%) 1px 2px 5px 0px;
   padding: 6px 4px;
   border-radius: 5px;
   font-weight: 500;
