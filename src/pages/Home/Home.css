@@ -23,18 +23,19 @@
   text-align: center;
 }
 .hero-caption {
+  font-weight: 300;
   font-size: 22px;
-  font-weight: lighter;
   text-align: center;
 }
 .slight-bold {
-  font-weight: 400;
+  font-weight: 500;
 }
-.micro {
+.micro-btn {
   color: #4a90e2;
   border: none;
   padding: 18px;
-  width: 300px;
+  width: 90%;
+  max-width: 375px;
   border-radius: 50px;
   text-transform: uppercase;
   background-color: white;
@@ -43,29 +44,38 @@
 }
 .btn-div {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-div img{
+object-fit: contain;
+width: 200px;
+margin: 5px;
 }
 .micro-section-2 {
   color: rgb(123, 123, 123);
 }
 .step-container {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 90px 0;
 }
 .step-heading {
   text-align: center;
   color: rgb(74, 74, 74);
   font-size: 20px;
-  font-weight: lighter;
-  margin-top: 50px;
+  margin:0;
+  padding:0;
 }
-.step-container h2 {
-  font-weight: lighter;
+.section-heading{
+  font-weight: 400;
   text-transform: capitalize;
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
 }
 .step-div {
   margin-top: 50px;
@@ -81,8 +91,10 @@
   padding-bottom: 50px;
 }
 .task-heading {
-  font-weight: bold;
+  font-weight: '500';
   color: black;
+  font-size: 18px;
+  margin-top: 25px;
 }
 .task-div-inner {
   display: flex;
@@ -99,7 +111,8 @@
 
 .task-list-item {
   color: rgb(74, 74, 74);
-  margin-top: 10px;
+  margin-top: 5px;
+ 
 }
 .task-list-item span {
   margin-left: 10px;
@@ -150,7 +163,7 @@
 }
 .testimonial-row {
   display: flex;
-  /*overflow-x: scroll;*/
+  overflow-x: scroll;
   margin-top: 40px;
 }
 .testimonial-row::-webkit-scrollbar{
@@ -204,16 +217,16 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1000px) {
-  .micro-hero {
-    margin-left: 15px;
-    margin-right: 15px;
+@media screen and (max-width:425px){
+  .task-list-item{
+    margin-top: 10px;
   }
-  .step-container {
-    margin-left: 15px;
-    margin-right: 15px;
+  .task-list-item span{
+    font-size: 14px;
+    width: 90%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .step-container {
     margin-left: 15px;
@@ -237,6 +250,17 @@
       flex-direction: column;
       align-items: center;
   }
+  .task-list-item{
+     display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 450px;
+  }
+  .task-caption{
+    width: 90%;
+    margin-left:  auto;
+    margin-right: auto;
+  }
   .community-row{
     flex-direction: column;
     align-items: center;
@@ -245,5 +269,16 @@
     width: 90%;
     margin-top: 15px;
   }
+  .btn-div img{
+    width: 150px;
+  }
 
+}
+
+@media screen and (max-width: 1000px) {
+  .micro-hero {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
 }

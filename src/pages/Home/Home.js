@@ -1,5 +1,6 @@
 import React from 'react';
-import Step from '../Step/Step';
+import Step from '../../components/Step/Step';
+import {FaCheck, FaCheckCircle} from 'react-icons/fa'
 import appstore from '../../assets/appstore.png';
 import googleplay from '../../assets/googlePlay.png';
 import hero from '../../assets/micro.svg';
@@ -32,15 +33,15 @@ function Home() {
               <span className="slight-bold"> anywhere, anytime, </span>
               and from <span className="slight-bold">any device</span>
             </span>
-            <button className="micro"> start earning now</button>
+            <button className="micro-btn"> start earning now</button>
             <div className="btn-div">
-              <a href="">
+              <a href="#">
+                {' '}
+                <img src={googleplay}  />{' '}
+              </a>
+              <a href="#">
                 {' '}
                 <img src={appstore} />{' '}
-              </a>
-              <a href="">
-                {' '}
-                <img src={googleplay} style={{ marginLeft: 10 }} />{' '}
               </a>
             </div>
             <img src={hero} className="micro-hero-img" />
@@ -50,8 +51,8 @@ function Home() {
       <section className="micro-section-2">
         <div className="step-container">
           <div className="step-heading">
-            <h2>how it works</h2>
-            <span>
+            <h2 className="section-heading">how it works</h2>
+            <span className="section-caption">
               Four easy steps to get paid. All you need is an internet connected
               device to get started.
             </span>
@@ -87,17 +88,24 @@ function Home() {
               </span>
               <div className="task-list">
                 <div className="task-list-item">
-                  &#10003; <span>Draw a box around an object</span>
+                  <FaCheck color="rgb(48, 128, 224)" />{' '}
+                  <span>Draw a box around an object</span>
+                  <div style={{ width: 15 }} />
                 </div>
                 <div className="task-list-item">
-                  &#10003; <span>Categorize the scene in an image</span>
+                  <FaCheck color="rgb(48, 128, 224)" />{' '}
+                  <span>Categorize the scene in an image</span>
+                  <div style={{ width: 15 }} />
                 </div>
                 <div className="task-list-item">
-                  &#10003; <span>Transcribe audio to text</span>
+                  <FaCheck color="rgb(48, 128, 224)" />{' '}
+                  <span>Transcribe audio to text</span>
+                  <div style={{ width: 15 }} />
                 </div>
                 <div className="task-list-item">
-                  &#10003;{' '}
+                  <FaCheck color="rgb(48, 128, 224)" />{' '}
                   <span>Track the same object across frames in a video</span>
+                  <div style={{ width: 15 }} />
                 </div>
               </div>
             </div>
@@ -117,7 +125,7 @@ function Home() {
       <section className="micro-section-3">
         <div className="step-container">
           <div className="step-heading">
-            <h2>Many Types of Jobs</h2>
+            <h2 className="section-heading">Many Types of Jobs</h2>
           </div>
 
           <div className="step-div">
@@ -147,8 +155,8 @@ function Home() {
       <section className="micro-section-4">
         <div className="step-container">
           <div className="step-heading">
-            <h2>A Community</h2>
-            <span>
+            <h2 className="section-heading">A Community</h2>
+            <span className="section-caption">
               Join a vibrant community of moderators who are using Hive Micro to
               improve their lives.
             </span>
@@ -172,8 +180,8 @@ function Home() {
       </section>
       <section className="micro-section-3">
         <div className="step-container">
-          <h2>Testimonials</h2>
-          <img src={globe} style={{ width: '100%' }} />
+          <h2 className="section-heading">Testimonials</h2>
+          <img src={globe} style={{ width: '100%', marginTop: 20 }} />
           <div className="testimonial-row">
             <div className="testimonial">
               <div className="country-div">

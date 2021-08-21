@@ -17,12 +17,14 @@ import {
   removeSkill,
   addAllSkills,
   removeAllSkills,
-} from '../../actions/skills';
+} from '../../actions/skillsActions';
 import './Dropdown.css';
 
 function Dropdown({ values, title, selectedValues }) {
+
   const dispatch = useDispatch();
   const [closed, setClosed] = useState(true);
+
   const cache = useRef(
     new CellMeasurerCache({
       fixedWidth: true,
@@ -76,13 +78,14 @@ function Dropdown({ values, title, selectedValues }) {
   );
 
   return (
-    <div className="main">
+    <div data-testid="dropdown-test" className="main">
       <div className="buttons-div">
         <span onClick={() => selectAll()}>Select All</span>
         <span onClick={() => deselectAll()}>Deselect All</span>
       </div>
       <div className="dropdown-container">
         <div className="dropdown">
+          
           {selectedValues.length < 1 ? (
             <span className="title">{title ? title : 'Select Values'}</span>
           ) : (
@@ -133,24 +136,6 @@ function Dropdown({ values, title, selectedValues }) {
                 )}
               </AutoSizer>
             </div>
-            {/*values.map((value) => {
-            return (
-              <div
-                key={value}
-                className="dropdown-value-div"
-                onClick={() => handleValueClick(value)}
-              >
-                {selectedValues.indexOf(value) !== -1 ? (
-                  <FaCheckCircle color="grey" size="15" />
-                ) : (
-                  <div style={{ width: 15 }}></div>
-                )}
-
-                <span className="value-text">{value}</span>
-                <div style={{ width: 15 }} />
-              </div>
-            );
-          })*/}
           </div>
         )}
       </div>
